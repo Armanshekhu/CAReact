@@ -1,0 +1,118 @@
+@import "tailwindcss";
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-container {
+  background: linear-gradient(135deg, #7e7f84 0%, #efecf1 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.product-table thead {
+  background: #2c3e50;
+  color: white;
+  font-weight: 600;
+}
+
+.product-table th,
+.product-table td {
+  padding: 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.product-table th {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.product-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.product-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.product-table td:nth-child(2) {
+  font-weight: 600;
+  color: #97a0ca;
+  font-size: 1.1rem;
+}
+
+.action-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.action-btn.add {
+  background-color: #27ae60;
+  color: white;
+}
+
+.action-btn.add:hover {
+  background-color: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.action-btn.remove {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.action-btn.remove:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.total-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.total-container h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #5f88b1;
+}
+
+.total-container h2::before {
+  content: "🛒 ";
+}
